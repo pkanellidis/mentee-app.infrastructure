@@ -6,6 +6,3 @@ terraform_fmt:
 
 terraform_validate:
 	terraform validate
-
-terraform_ci:
-	terraform fmt -diff=true -check -recursive
