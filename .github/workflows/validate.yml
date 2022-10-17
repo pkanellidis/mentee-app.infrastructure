@@ -10,7 +10,7 @@ jobs:
 
       - name: Build Project
         run:
-          bin/build.sh terraform
+          make build
 
       - uses: hashicorp/setup-terraform@v2.0.2
       - name: Terraform Init
