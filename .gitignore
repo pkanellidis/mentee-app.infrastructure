@@ -1,1 +1,7 @@
 .env
+./projects/.terraform
+_build.tf
+*.tfstate*
+.terraform.lock.hcl
+.terraform
+echo-name.zip
