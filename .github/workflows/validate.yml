@@ -1,6 +1,6 @@
 name: Terraform
 
-on: [push, merge]
+on: [push]
 
 jobs:
   validate:
