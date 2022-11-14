@@ -13,7 +13,7 @@ resource "github_branch" "mentee-spa-main" {
   branch     = "main"
 }
 
-resource "github_branch_default" "default-branch-mentee-spa"{
+resource "github_branch_default" "default-branch-mentee-spa" {
   repository = github_repository.mentee-app-spa.name
   branch     = github_branch.mentee-spa-main.branch
 }

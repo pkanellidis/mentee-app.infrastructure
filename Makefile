@@ -1,7 +1,8 @@
-
 build:
-		./bin/build.sh projects
+	./bin/build.sh projects
 
-validate:
-		make build
-		terraform validate
+terraform_fmt:
+	terraform fmt -diff=true -check -recursive
+
+terraform_validate:
+	terraform validate

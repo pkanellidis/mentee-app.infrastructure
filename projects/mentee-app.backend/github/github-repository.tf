@@ -13,7 +13,7 @@ resource "github_branch" "mentee-backend-main" {
   branch     = "main"
 }
 
-resource "github_branch_default" "default-branch-mentee-backend"{
+resource "github_branch_default" "default-branch-mentee-backend" {
   repository = github_repository.mentee-app-backend.name
   branch     = github_branch.mentee-backend-main.branch
 }

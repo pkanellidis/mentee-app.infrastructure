@@ -1,0 +1,27 @@
+name: Terraform
+
+on: [push]
+
+jobs:
+  validate:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build Project
+        run:
+          make build
+
+      - uses: hashicorp/setup-terraform@v2.0.2
+      - name: Terraform Init
+        run:
+          terraform init
+
+      - name: Validate Format
+        run:
+          make terraform_fmt
+
+      - name: Validate Project
+        run:
+          make terraform_validate
+
