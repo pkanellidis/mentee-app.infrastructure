@@ -6,3 +6,6 @@ terraform_fmt:
 
 terraform_validate:
 	terraform validate
+
+load_env:
+	. ./.env
