@@ -12,7 +12,7 @@ resource "aws_lambda_function" "mentee-app-echo" {
 
 data "archive_file" "echo-name-zip-code" {
   output_path = "${path.root}/echo-name.zip"
-  source_dir  = "${path.module}/src/"
+  source_dir  = "${path.root}/projects/mentee-app.apigateway/lambdas/src"
   type        = "zip"
 }
 
