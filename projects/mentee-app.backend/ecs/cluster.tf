@@ -1,5 +1,5 @@
 resource "aws_ecs_cluster" "mentee-app-backend" {
-  name = "mentee-app.backend-${var.environment}"
+  name = "mentee-app-backend-${var.environment}"
 
   setting {
     name  = "containerInsights"
